@@ -1,12 +1,7 @@
 <!doctype html>
 <html>
 	<head>
-		<style>
-		p {
-			color: white;
-		  background-image: url('background.png');
-		}
-		</style>
+
 	<!-- Do not change this group of code below -->
 	    <meta charset="UTF-8">
 	    <link href="styles.css" rel="stylesheet">
@@ -27,27 +22,34 @@
 		<!-- <h1 id="logo"><a href="index.html">The Toco Toucan</a></h1> -->
 		<!-- NOTE Use this h1 above if you want the company text ABOVE the Nav bar  -->
     	<!--NOTE NAV CODE - watch out! Do not change class or id names -->
-								 <img src="images\search_bar.png" alt="search_bar" align="right" width="250" height="150" vspace="20" hspace="30">
-		<input type="checkbox" id="xBxHack" />
+		<div class="grey">
+			<header>
+				<img class="search" src="images\search_bar.png" alt="search_bar">
+			</header>
+
+			<input type="checkbox" id="xBxHack" />
 		    <!-- This will trigger the dropdown menu when user clicks in the icon  -->
-	    <nav id="mainNav" class="mainNav">
-		   <div class="navcontainer">
-			   <span class="nav-grid">
-				   <span id="logo"><a href="index.html"><img src="images\logo.png"></a></span>
-		    		<label class="navBars" for="xBxHack">
-		    			<i class="fa fa-bars"></i>
-		                <!-- hamburgerc icon -->
-		    		</label>
-				</span>
-	    		<ul id="menu" class="menu">
-	    			<li><a href="index.html">Home</a></li>
-	    			<li><a href="services.html">Services</a></li>
-	    			<li><a href="about.html">About</a></li>
-	    			<li><a href="thanks.html">Thanks</a></li>
-	                <!-- Some of these links above won't be developed - make sure those have a hashtag in the link address so it will keep users from visiting a broken page.-->
-	    		</ul>
-	    	</div><!-- end NAV container-->
-	    </nav><!--NOTE End NAV CODE-->
+		    <nav id="mainNav" class="mainNav">
+
+			   <div class="navcontainer">
+				   <span class="nav-grid">
+					   <span id="logo"><a href="index.html"><img src="images\logo.png"></a></span>
+			    		<label class="navBars" for="xBxHack">
+			    			<i class="fa fa-bars"></i>
+			                <!-- hamburgerc icon -->
+			    		</label>
+					</span>
+		    		<ul id="menu" class="menu">
+		    			<li><a href="index.html">Home</a></li>
+		    			<li><a href="services.html">Services</a></li>
+		    			<li><a href="about.html">About</a></li>
+
+		                <!-- Some of these links above won't be developed - make sure those have a hashtag in the link address so it will keep users from visiting a broken page.-->
+		    		</ul>
+		    	</div><!-- end NAV container-->
+		    </nav><!--NOTE End NAV CODE-->
+		</div><!-- end class grey-->
+
 		<!-- <h1 id="logo"><a href="index.html">The Toco Toucan</a></h1> -->
 		<!-- NOTE Use this h1 above if you want the company text BELOW the Nav bar  -->
 			<img src="images/bar1.jpg" alt="bar1" width="2800" height="35">
@@ -59,31 +61,37 @@
 			<div class="grid"><!-- Start grid - a row of two columns-->
 				<div class="col">
 <img src="images\food1.jpg" alt="food1">
-						<p style = "font-size:18px">Our stores pride ourselves in providing the largest selection of international foods at an everyday low price.  Tailored to the customer’s needs we offer
+<!-- https://www.w3schools.com/css/css3_object-fit.asp
+I removed the circle b/c the image ratio was skewed. I also used object cover so the image is cropped to the width and height defined in CSS so they are both the same size.
+ -->
+						<p>Our stores pride ourselves in providing the largest selection of international foods at an everyday low price.  Tailored to the customer’s needs we offer
 						Within a span of 30 countries, our stores are always the perfect fit for any shopping occasion offering only the best food, year round, and locally.  “To you, For you, and By you”, everyday, here at EXOGROCERY.</p>
 <br>
 <img src="images\food2.jpg" alt="food2">
-						<p style = "font-size:18px">Since 1982, EXOGROCERY is one of the fastest growing international food chain suppliers of your local area.  Some of out 30,000 retail stores spans 30 countries in
+
+						<p>Since 1982, EXOGROCERY is one of the fastest growing international food chain suppliers of your local area.  Some of out 30,000 retail stores spans 30 countries in
 						total offering some of the most highest quality international food selections available.</p>
-						<p style = "font-size:18px">Our pharmacies and special services can provide people with disabilites the medication, help, and support they need to continue to live life to the fullest.  Grocery pickup is always available,
+						<p>Our pharmacies and special services can provide people with disabilites the medication, help, and support they need to continue to live life to the fullest.  Grocery pickup is always available,
 						so please, fill out an online form to get started on an order with our large inventory with delivery from one of our large warehouses, or local stores soon!</p>
 				</div><!-- end 1st columns-->
 			<div class="image-on-left clear-float">
 				<!-- The image-and-text class is for having an image next to text. Do not use this class without the clear-float class. It will prevent the code from getting messed up -->
 					<img src="images\food3.jpg" alt="food3">
-					<p style = "font-size:18px">We offer some of the finest selections, in many varieties, aways available near your area, in your local EXOGROCERY store.  Custom orders are our speciality.  Search 10,000’s of items in our database as
+					<p>We offer some of the finest selections, in many varieties, aways available near your area, in your local EXOGROCERY store.  Custom orders are our speciality.  Search 10,000’s of items in our database as
 					  non-perishable goods can be shipped to any of our local store pickup locations, or to your house free of charge with our easy discount subscription plan.</p>
-					<p style = "font-size:18px">Take an extra 15% off wholesale clearance items that can be delivered to your door right now.  Bulk packaged items may be eligible for shipping discounts depending on weight or size of the item.</p>
+					<p>Take an extra 15% off wholesale clearance items that can be delivered to your door right now.  Bulk packaged items may be eligible for shipping discounts depending on weight or size of the item.</p>
 <br>
 					<img src="images\food4.jpg" alt="food4">
-					<p style = "font-size:18px">Whole grains, dry foods, canned food, and many items available for purchase are always in stock.  Special request foods can be ordered on a limited basis per customer.  Please fill out a form with
+					<p>Whole grains, dry foods, canned food, and many items available for purchase are always in stock.  Special request foods can be ordered on a limited basis per customer.  Please fill out a form with
 					  a favorite brand to your unique culture, custom, and cuisine to have the item in stock today!</p>
 			</div><!--End image-and-text-->
+		</div>
+		<!-- ADDED closing div --------------------- -->
 		</div><!--NOTE END wrapper-->
 			<br><br><br><br><br><br><br>
 	<footer>
 		<div class="footer-wrapper">
-			<h2>Local, International, Worldwide . . .</h2>
+			<p>Local, International, Worldwide . . .</p>
 			<br>
 			<p>Copyright &copy; 2022 Exogrocery</p>
 			<div class="fa fa-facebook-official"> </div>

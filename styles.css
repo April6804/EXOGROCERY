@@ -5,6 +5,8 @@ body{
   /* Leave the margin and padding to 0 */
   box-sizing: border-box;
   font-family: 'Open Sans', arial, sans-serif;
+  font-size: 16px;
+  /* background: #a9a9a9; */
 }
 
 
@@ -19,15 +21,24 @@ If the logo is in the navigation bar, you will find more logo styles lower down 
     margin-bottom: 20px;
 }
 
-
+.grey{
+    background: #a9a9a9;
+}
 p{
   line-height: 1.4;
 }
+.search{
+    display: none;
+}
+/* SEARCH and PHONE #
+See media query */
 
 .wrapper{
   width:90%;
   margin:auto;
   /* NOTE This centers the site and keeps it from getting too close to the edge of the browser */
+  background: white;
+  padding:10px;
 }
 
 img{
@@ -86,7 +97,7 @@ figcaption{
 /* START Image with text on the other side styles -------- */
 .image-on-left{
     width: 100%;
-    margin: 50px auto;
+    /* margin: 50px auto; */
     text-align: left;
 }
 .image-on-left img{
@@ -94,13 +105,15 @@ figcaption{
     /* NOTE Position of image */
     height: 150px;
     width: 150px;
-    border-radius: 50%;
-    margin-right: 30px;
+    /* border-radius: 50%; */
+    /* https://www.w3schools.com/css/css3_object-fit.asp */
+    object-fit: cover;
+    margin-right: 10px;
     margin-bottom: 10px;
 }
 .image-on-right{
     width: 100%;
-    margin: 50px auto;
+    /* margin: 50px auto; */
     text-align: right;
 }
 .image-on-right img{
@@ -108,8 +121,10 @@ figcaption{
     /* NOTE Position of image */
     height: 150px;
     width: 150px;
-    border-radius: 50%;
-    margin-left: 30px;
+    /* border-radius: 50%; */
+    /* https://www.w3schools.com/css/css3_object-fit.asp */
+    object-fit: cover;
+    margin-left: 10px;
     margin-bottom: 10px;
 }
 .clear-float{
@@ -258,7 +273,16 @@ nav a{
 
 /* END MOBILE STYLES  --------------------- */
 /* Medium size screen styles below -------- */
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 600px) {
+    header{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .search{
+        width:250px;
+        display: inline-flex;
+        padding-top:20px;
+    }
 
   .wrapper{
     width:85%;
@@ -278,27 +302,29 @@ nav a{
   /* Larger image for larger screens */
   .image-on-left{
       width: 100%;
-      margin: 50px auto;
+      /* margin: 50px auto; */
       text-align: left;
+  }
+  .image-on-left p, .image-on-right p{
+      margin-top:0;
   }
   .image-on-left img{
     float: left;
     /* Larger image for larger screens */
     height: 220px;
     width: 220px;
-    border-radius: 50%;
     margin-right: 40px;
   }
   .image-on-right{
       width: 100%;
-      margin: 50px auto;
+      /* margin: 50px auto; */
       text-align: right;
   }
   .image-on-right img{
     float: right;
     height: 220px;
     width: 220px;
-    border-radius: 50%;
+    object-fit: cover;
     margin-left: 40px;
   }
   /* END Image on one side and text on the other side */
